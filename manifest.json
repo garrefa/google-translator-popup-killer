@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Google Translator Popup Killer",
+  "description": "This extension removes the anoying popups added by Google Translator",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["popupkiller.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
